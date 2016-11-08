@@ -52,10 +52,10 @@ foreach($subcats as $subcat) {
 
 /******
 ** Uncomment below code for showing all categories..
-
+*/
 $args = array('category_name' => $subcat->cat_name, 'order' => 'DESC', 'posts_per_page'=>-1, 'numberposts'=>-1);
 $subcat_posts = get_posts($args);
-*/
+
 
 $subcat_posts = get_posts('cat=' . $subcat->cat_ID);
 
