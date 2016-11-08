@@ -48,12 +48,12 @@ $cat = $cat_name;//'news';
 $catID = get_cat_ID($cat);
 $subcats = get_categories('child_of=' . $catID);
 
-foreach($subcats as $subcat) {
+/*foreach($subcats as $subcat) {*/
 
 /******
 ** Uncomment below code for showing all categories..
 */
-$args = array('category_name' => $subcat->cat_name, 'order' => 'DESC', 'posts_per_page'=>-1, 'numberposts'=>-1);
+$args = array('category_name' => $cat_name, 'order' => 'DESC', 'posts_per_page'=>-1, 'numberposts'=>-1);
 $subcat_posts = get_posts($args);
 
 
@@ -82,7 +82,7 @@ $subcat_posts = get_posts('cat=' . $subcat->cat_ID);
 ?>	
 
 </div>
-<?php }
+<?php // }
 endif; ?>
 	</div>
 	<?php get_sidebar(); ?>
