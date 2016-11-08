@@ -53,7 +53,7 @@ $subcats = get_categories('child_of=' . $catID);
 /******
 ** Uncomment below code for showing all categories..
 */
-$args = array('category_name' => $cat_name, 'order' => 'DESC', 'posts_per_page'=>-1, 'numberposts'=>-1);
+$args = array('category' => $catID, 'order' => 'DESC', 'posts_per_page'=>-1, 'numberposts'=>-1);
 $subcat_posts = get_posts($args);
 
 
