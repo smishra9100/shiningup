@@ -46,6 +46,8 @@ $cat_name = get_category(get_query_var('cat'))->name;
 <?php
 $cat = $cat_name;//'news';
 $catID = get_cat_ID($cat);
+echo $catID;
+exit;
 $subcats = get_categories('child_of=' . $catID);
 
 /*foreach($subcats as $subcat) {*/
