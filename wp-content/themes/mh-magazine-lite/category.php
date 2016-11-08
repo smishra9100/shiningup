@@ -46,9 +46,9 @@ $cat_name = get_category(get_query_var('cat'))->name;
 <?php
 $cat = $cat_name;//'news';
 $catID = get_cat_ID($cat);
-echo $catID;
-exit;
-$subcats = get_categories('child_of=' . $catID);
+/*echo $catID;
+exit;*/
+//$subcats = get_categories('child_of=' . $catID);
 
 /*foreach($subcats as $subcat) {*/
 
@@ -59,7 +59,7 @@ $args = array('category' => $catID, 'order' => 'DESC', 'posts_per_page'=>-1, 'nu
 $subcat_posts = get_posts($args);
 
 
-$subcat_posts = get_posts('cat=' . $subcat->cat_ID);
+//$subcat_posts = get_posts('cat=' . $subcat->cat_ID);
 
 ?>
 
