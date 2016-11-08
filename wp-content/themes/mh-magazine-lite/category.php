@@ -74,7 +74,7 @@ $subcat_posts = get_posts($args);
 		<div class="post_content_container" style="width:50%;float:left;">
 			<div class="post" style="position: relative;">
 				<a href="<?php echo $subcat_post->guid ?>">
-					<span class="post_title" style="font-size:20px; color:yellow;position:absolute; top: 60%; left: 30%;">
+					<span class="post_title" style="font-size:20px; color:blue;">
 							<?php echo get_the_title($postID); ?>
 					</span>
 				</a>
